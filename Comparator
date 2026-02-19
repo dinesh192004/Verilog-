@@ -1,0 +1,12 @@
+module comparator(input[3:0] a,b,output reg agrt_b,aless_b,aeq_b);
+always@ (*) 
+ 
+if(a>b)begin
+   agrt_b=1;
+   end else if(a<b)begin
+   aless_b=1;
+   end else begin
+   aeq_b=1;
+   end
+    
+endmodule
