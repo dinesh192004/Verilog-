@@ -1,0 +1,8 @@
+module SR_latch(input s,r,output reg q,qb);
+always@(*)begin
+if(s!=r)begin
+    q=s;
+    qb=r;
+   end
+end
+endmodule
