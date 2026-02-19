@@ -1,0 +1,11 @@
+module t_ff(input t,clk,rst,output qbar,reg q);
+ assign qbar=~q;
+always@(posedge clk)begin
+if(rst)
+    q<=0;
+   else begin
+  q<=~t;
+  end
+end
+
+endmodule
