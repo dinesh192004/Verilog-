@@ -1,0 +1,9 @@
+module down_count(input clk,rst,output reg[3:0]count);
+always @(posedge clk)
+if(rst)begin
+    count<=0;
+    end
+ else
+    count<=count-1;
+    
+endmodule
