@@ -1,0 +1,9 @@
+module decoder(input d1,d0,E, output[3:0]y);
+wire t1,t2 ;
+and n1(y[3],E,d1,d0);
+and n2(y[2],E,d1,t2);
+and n3(y[1],E,t1,d1);
+and n4(y[0],E,t1,t2); 
+not a1(t1,d1);
+not a2(t2,d0);
+endmodule  
